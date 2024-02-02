@@ -1,0 +1,64 @@
+### use rest-client plugin in vscode
+
+# display to display existingRoutes
+GET http://localhost:3000/404
+Content-Type: application/json
+
+
+###
+
+# display debug: store
+GET http://localhost:3000/debug/toto
+Content-Type: application/json
+
+###
+
+# display debug: get by ID
+GET http://localhost:3000/debug/90282322-5de0-4e23-b7b3-ab4285104867
+Content-Type: application/json
+
+
+###
+
+POST http://127.0.0.1:3000/issues
+Content-Type: application/json
+
+[
+	{
+		"video": "video-1234",
+		"category": "news",
+		"userId": 12345,
+		"comment": "issue #1"
+	},
+	{
+		"video": "video-1234",
+		"category": "news",
+		"userId": 345234,
+		"comment": "issue #1"
+	},
+	{
+		"video": "video-1234",
+		"category": "news",
+		"userId": 424200,
+		"comment": "issue #1"
+	},
+	{
+		"video": "video-2435",
+		"category": "games",
+		"userId": 345345,
+		"comment": "issue #1"
+	}
+]
+
+
+###
+
+# @name changeStatus : 
+# all status : pending, ready, open, closed
+POST http://127.0.0.1:3000/change-status/open
+Content-Type: application/json
+
+[
+	"2223f53b-d917-408a-970b-50014b710761"
+]
+
